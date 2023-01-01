@@ -4,6 +4,14 @@
 # @author Jeff Geerling
 #
 
+#SSH agent settings
+eval `ssh-agent`
+ssh-add -k ~/.ssh/mford-rhpds-aws.pem
+ssh-add -k ~/.ssh/mford-useast-1-key.pem
+ssh-add -k ~/.ssh/mford-useast-2-key.pem
+ssh-add -k ~/.ssh/rh_cee_gitlab.pem
+ssh-add -k ~/.ssh/fordlab.pem
+
 # Colors.
 unset LSCOLORS
 export CLICOLOR=1
@@ -125,3 +133,4 @@ export COMPOSER_MEMORY_LIMIT=-1
 #}
 #shopt -s extdebug
 #trap prod_command_trap DEBUG
+
