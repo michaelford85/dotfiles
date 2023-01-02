@@ -10,6 +10,9 @@ ssh-add -k ~/.ssh/mford-useast-1-key.pem
 ssh-add -k ~/.ssh/mford-useast-2-key.pem
 ssh-add -k ~/.ssh/fordlab.pem
 
+# kubernetes aliases.
+alias k='kubectl`
+
 # Colors.
 unset LSCOLORS
 export CLICOLOR=1
@@ -34,12 +37,6 @@ export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
 if [ -f ~/.aliases ]
 then
   source ~/.aliases
-fi
-
-# Include ssh config file (if present) containing ssh agent and key settings, etc.
-if [ -f ~/.sshconfig ]
-then
-  source ~/.sshconfig
 fi
 
 # # Set architecture-specific brew share path.
