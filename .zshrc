@@ -36,6 +36,12 @@ then
   source ~/.aliases
 fi
 
+# Include ssh config file (if present) containing ssh agent and key settings, etc.
+if [ -f ~/.sshconfig ]
+then
+  source ~/.sshconfig
+fi
+
 # # Set architecture-specific brew share path.
 # arch_name="$(uname -m)"
 # if [ "${arch_name}" = "x86_64" ]; then
