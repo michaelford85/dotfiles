@@ -11,7 +11,7 @@ ssh-add -k ~/.ssh/mford-useast-2-key.pem
 ssh-add -k ~/.ssh/fordlab.pem
 
 # kubernetes aliases.
-alias k='kubectl`
+alias k=kubectl
 
 # Colors.
 unset LSCOLORS
