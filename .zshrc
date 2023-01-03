@@ -13,6 +13,9 @@ ssh-add -k ~/.ssh/fordlab.pem
 # kubernetes aliases.
 alias k=kubectl
 
+# sync Mac config to Ansible Control Node
+alias configsync='scp ~/Dropbox/My\ Documents/Macbook\ Ansible\ Restore/config.yml rocky@rocky.home.arpa:~/git-workspace/mac-dev-playbook-config/config.yml'
+
 # Colors.
 unset LSCOLORS
 export CLICOLOR=1
@@ -60,6 +63,8 @@ alias gc='git commit'
 alias gp='git pull --rebase'
 alias gcam='git commit -am'
 alias gl='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+
+
 
 # Completions.
 autoload -Uz compinit && compinit
