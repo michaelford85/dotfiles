@@ -14,7 +14,7 @@ ssh-add -k ~/.ssh/fordlab.pem
 alias k=kubectl
 
 # sync Mac config to Ansible Control Node
-alias configsync='scp ~/Dropbox/My\ Documents/Macbook\ Ansible\ Restore/config.yml rocky@rocky.home.arpa:~/git-workspace/mac-dev-playbook-config/config.yml'
+alias configsync='scp ~/Library/CloudStorage/Dropbox/My\ Documents/Macbook\ Ansible\ Restore/config.yml rocky@rocky.home.arpa:~/git-workspace/mac-dev-playbook-config/config.yml'
 
 # Colors.
 unset LSCOLORS
