@@ -10,6 +10,7 @@ ssh-add -k ~/.ssh/mford-useast-1-key.pem
 ssh-add -k ~/.ssh/mford-useast-2-key.pem
 ssh-add -k ~/.ssh/fordlab.pem
 ssh-add -k ~/.ssh/ciq_bitbucket.pem
+ssh-add -k ~/.ssh/gce_ascender_key.pem
 
 
 # kubernetes aliases.
