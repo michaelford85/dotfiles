@@ -8,6 +8,7 @@
 eval `ssh-agent`
 ssh-add -k ~/.ssh/mford-useast-1-key.pem
 ssh-add -k ~/.ssh/mford-useast-2-key.pem
+ssh-add -k ~/.ssh/michaelford85_github.pem
 ssh-add -k ~/.ssh/fordlab.pem
 
 
