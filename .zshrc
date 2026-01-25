@@ -15,9 +15,6 @@ ssh-add -k ~/.ssh/fordlab.pem
 # kubernetes aliases.
 alias k=kubectl
 
-# sync Mac config to Ansible Control Node
-alias configsync='scp ~/Library/CloudStorage/Dropbox/My\ Documents/Macbook\ Ansible\ Restore/config.yml pi@homelabops.mford.io:~/git-workspace/mac-dev-playbook-config/config.yml'
-
 
 # Colors.
 unset LSCOLORS
@@ -34,7 +31,7 @@ export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
 plugins=(git brew history kubectl history-substring-search)
 
 # Custom $PATH with extra locations.
-export PATH=$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/go/bin:/usr/local/git/bin:$HOME/.composer/vendor/bin:$PATH
+#export PATH=$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/go/bin:/usr/local/git/bin:$HOME/.composer/vendor/bin:$PATH
 
 # Bash-style time output.
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
