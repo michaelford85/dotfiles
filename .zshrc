@@ -140,3 +140,6 @@ export HOMEBREW_AUTO_UPDATE_SECS=604800
 #shopt -s extdebug
 #trap prod_command_trap DEBUG
 
+# pyenv -- installed via Homebrew (see homebrew_installed_packages).
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null && eval "$(pyenv init - zsh)"
